@@ -16,6 +16,9 @@
 
 body {
     background-color: var(--pale-blue);
+    font: 16px;
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: no-repeat;
 }
 
 .main {
@@ -24,14 +27,10 @@ body {
     align-items: center;
     height: 85vh;
     font-family: 'Red Hat Display', sans-serif;
-    font: 16px;
-    background-image: url(images/pattern-background-desktop.svg);
-    background-repeat: no-repeat;
-    
 }
 
 .card {
-    width: 350px;
+    max-width: 350px;
     border-radius: 10px;
     background-color: white;
 }
@@ -78,9 +77,14 @@ body {
 .card__plan__change {
     margin: 0 10px 0 auto;
     font-weight: bold;
-
-    /* Card Plan End */
 }
+
+.card__plan__change:hover {
+    text-decoration: none;
+    color: purple;
+}
+    /* Card Plan End */
+
 /* Buttons Start */
 
 .card__buy__btn {
@@ -96,6 +100,10 @@ body {
     box-shadow: 0 15px 15px 0 rgba(0, 51, 255, 0.15); 
 }
 
+.card__buy__btn:hover {
+    background-color: rgba(117, 87, 201, 0.89);
+}
+
 .card__cancel__btn {
     display: block;
     text-align: center;
@@ -106,5 +114,18 @@ body {
     font-size: .9em;
 }
 
+.card__cancel__btn:hover {
+    color: black;
+}
+
 /* Buttons End */
 
+/* Media Query */
+
+@media screen and (min-width: 500px) {
+
+    body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-color: var(--pale-blue);
+} }
