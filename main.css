@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+
+/* Variables Start */
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: hsl(224, 23%, 55%);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+/* Variables End */
+
+body {
+    background-color: var(--pale-blue);
+}
+
+.main {
+    display: grid;
+    justify-content:  center;
+    align-items: center;
+    height: 85vh;
+    font-family: 'Red Hat Display', sans-serif;
+    font: 16px;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    
+}
+
+.card {
+    width: 350px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.card__top-image {
+    display: block;
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card__info {
+    
+    margin: 0 25px;
+}
+
+.card__info-description {
+    text-align: center;
+}
+
+/* Card Plan Start */
+
+.card__plan {
+    display: flex;
+    align-items: center;
+    background-color: var(--very-pale-blue);
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+.card__plan__image {
+    margin-left: 10px;
+    margin-right: 15px;
+}
+
+.card__plan__item h4 {
+    margin-bottom: 5px;
+}
+
+.card__plan__item p {
+    margin-top: 0px;
+}
+
+.card__plan__change {
+    margin: 0 10px 0 auto;
+    font-weight: bold;
+
+    /* Card Plan End */
+}
+/* Buttons Start */
+
+.card__buy__btn {
+    width: 100%;
+    background-color: var(--bright-blue);
+    color: white;
+    font-weight: bold;
+    font-family: 'Red Hat Display', sans-serif;
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 25px;
+    box-shadow: 0 15px 15px 0 rgba(0, 51, 255, 0.15); 
+}
+
+.card__cancel__btn {
+    display: block;
+    text-align: center;
+    margin-bottom: 25px;
+    text-decoration: none;
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    font-size: .9em;
+}
+
+/* Buttons End */
+
